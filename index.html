@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PureCSS Dropdown menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">  
+        <link rel="stylesheet" href="pure-dropdown.css"> 
+    </head>
+    <body>
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+            <a href="#" class="pure-menu-heading">Site Title</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-selected"><a href="#">Home</a></li>
+                <li><a href="#">Flickr</a></li>    
+                <li class="pure-menu-can-have-children">
+                    <a class="pure-menu-label" href="#">Messenger</a>
+                    <ul class="pure-menu-children">
+                        <li><a href="#">Flickr</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li class="pure-menu-can-have-children">
+                            <a class="pure-menu-label" href="#">Messenger</a>
+                            <ul class="pure-menu-children">
+                                <li><a href="#">Flickr</a></li>
+                                <li><a href="#">Messenger</a></li>
+                                <li><a href="#">Sports</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

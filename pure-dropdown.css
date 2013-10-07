@@ -1,0 +1,46 @@
+/* narcisradu.ro */
+
+.pure-menu ul li:hover > ul{
+    display: block;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pure-menu.pure-menu-horizontal > ul > li:hover > ul {
+    top: 100%;
+    left: 0;
+}
+
+.pure-menu.pure-menu-horizontal > ul > li:hover, 
+.pure-menu.pure-menu-horizontal > ul > li:hover > ul > li:hover {
+	background: #eee;
+}
+
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+	border: 1px solid #eee;
+}
+
+/* IE 7 hack to display arrows */
+.pure-menu-can-have-children > .pure-menu-label {
+	*zoom: expression(
+		this.runtimeStyle.zoom = "1",
+		this.innerHTML += '<span class="pure-dropdown-arrow">\25B8</span>'
+		);
+}
+
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+	*zoom: expression(
+		this.runtimeStyle.zoom = "1",
+		this.innerHTML += '<span class="pure-dropdown-arrow">\25BE</span>'
+		);
+}
+
+.pure-dropdown-arrow {
+	padding-left: 10px;
+	margin-right: -20px;
+	margin-top: -1px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
