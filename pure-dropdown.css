@@ -1,11 +1,10 @@
 /* narcisradu.ro */
 
-.pure-menu ul li:hover > ul{
+.pure-menu ul li:hover > ul {
     display: block;
     top: 0;
     left: 100%;
     visibility: visible;
-    width: 100%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -46,3 +45,4 @@
 	margin-top: -1px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
 }
+
