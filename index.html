@@ -9,7 +9,7 @@
         <title>PureCSS Dropdown menu</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">  
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">  
         <link rel="stylesheet" href="pure-dropdown.css"> 
     </head>
     <body>
@@ -37,5 +37,32 @@
                 <li><a href="#">Finance</a></li>
             </ul>
         </div>
+
+        <div style="width:300px; margin-top: 100px; margin-left: 20px;">
+            <div class="pure-menu pure-menu-open">
+                <a href="#" class="pure-menu-heading">Site Title</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-selected"><a href="#">Home</a></li>
+                    <li><a href="#">Flickr</a></li>    
+                    <li class="pure-menu-can-have-children">
+                        <a class="pure-menu-label" href="#">Messenger</a>
+                        <ul class="pure-menu-children">
+                            <li><a href="#">Flickr</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li class="pure-menu-can-have-children">
+                                <a class="pure-menu-label" href="#">Messenger Long Link</a>
+                                <ul class="pure-menu-children">
+                                    <li><a href="#">Flickr</a></li>
+                                    <li><a href="#">Messenger</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                </ul>   
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Finance</a></li>
+                </ul>
+            </div> 
+        </div>       
     </body>
 </html>
